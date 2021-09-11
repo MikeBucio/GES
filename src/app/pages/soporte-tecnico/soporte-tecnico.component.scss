@@ -1,0 +1,18 @@
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-image: url('../../../assets/img/soporte-tecnico.jpg');
+}
+
+p {
+    text-align: justify;
+}
+
+ol.circle {
+    list-style-type: square;
+}
+
+

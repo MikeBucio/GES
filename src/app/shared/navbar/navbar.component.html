@@ -1,0 +1,93 @@
+<!-- Overlay, must be placed direct after the opening body tag. -->
+<div class="bs-canvas-overlay bs-canvas-anim bg-dark position-fixed w-100 h-100"></div>
+
+<!-- Non-pushable content. -->
+<nav class="navbar navbar-expand-lg navbar-light bg-custom">
+    <button class="btn btn-primary" type="button" data-toggle="canvas" data-target="#bs-canvas-left" aria-expanded="false" aria-controls="bs-canvas-left">&#9776;</button>
+
+    <img src="../../../assets/ges.png" style="width: 180px;  margin-bottom: -50px; margin-top: -50px;" alt="GES">
+    <button class="navbar-toggler btn-success" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link" style="color: white;" routerLink="/quienes-somos">Inicio</a></li>
+            <!-- <li  class="nav-item"><a class="nav-link" routerLink="/contactos">Contáctanos</a></li> -->
+            <!--     <li class="nav-item"><a class="nav-link" routerLink="/consultoria">Consultoría</a></li> -->
+            <li class="nav-item"><a class="nav-link " style="color: white;" routerLink="/plataforma-documental">Plataforma
+                    documental</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: white;" routerLink="/resguardo-fisico">Resguardo físico</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: white;" routerLink="/android-project">Aplicaciones Móviles</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- /.navbar -->
+
+<!-- Conten Page -->
+<div>
+    <app-pages></app-pages>
+</div>
+<div>
+    <app-footer></app-footer>
+</div>
+
+<!-- Off-canvas sidebar markup, left/right or both. -->
+<div id="bs-canvas-left" class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed bg-light h-100">
+
+    <div class="sidebar-heading"> GES
+        <!--   --><button type="button" class="bs-canvas-close close" aria-label="Close"><span aria-hidden="true" class="text-dark"> <!-- &times;  -->
+     <i class="fas fa-angle-double-left"></i> 
+    </span></button></div>
+    <div class="list-group list-group-flush">
+        <a routerLink="/quienes-somos" class="list-group-item list-group-item-action bg-light ">¿Quiénes somos?</a>
+        <a routerLink="/contactos" class="list-group-item list-group-item-action bg-light ">Contacto</a>
+        <hr style="margin-bottom: -20px;">
+    </div>
+
+    <div class="sidebar-heading"> Servicios</div>
+    <div class="list-group list-group-flush">
+        <a routerLink="/consultoria" class="list-group-item list-group-item-action bg-light ">Consultoría</a>
+        <a href="#adminServicesItems" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action bg-light ">Servicios Administrativos <i
+                    class="fa fa-chevron-down float-right" style="margin-top: 5px;" aria-hidden="true"></i></a>
+        <ul class="collapse list-unstyled" id="adminServicesItems">
+            <li class="">
+                <a routerLink="/plataforma-documental" class="list-group list-group-item-action bg-light submenu">
+                    <p class="ml-5 ">Plataforma documental</p>
+                </a>
+            </li>
+            <li class="">
+                <a routerLink="/resguardo-fisico" class=" list-group list-group-item-action bg-light submenu">
+                    <p class="ml-5">Resguardo físico</p>
+                </a>
+            </li>
+        </ul>
+        <a routerLink="/soporte-Tecnico" class="list-group-item list-group-item-action bg-light ">Soporte
+                técnico</a>
+        <a href="#swtFactory" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action bg-light ">Software Factory <i
+                    class="fa fa-chevron-down float-right" style="margin-top: 5px;" aria-hidden="true"></i></a>
+        <ul class="collapse list-unstyled" id="swtFactory">
+            <li class="">
+                <a routerLink="/content-management" class="list-group list-group-item-action bg-light submenu">
+                    <p class="ml-5 ">Content Management</p>
+                </a>
+            </li>
+            <li class="">
+                <a routerLink="/desarrollo-de-aplicaciones" class=" list-group list-group-item-action bg-light submenu">
+                    <p class="ml-5">Desarrollo de aplicaciones</p>
+                </a>
+            </li>
+            <li class="">
+                <a routerLink="/BI" class=" list-group list-group-item-action bg-light submenu">
+                    <p class="ml-5">BI(Business Intelligence)</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sidebar-heading"> Desarrollo Móvil</div>
+    <div class="list-group list-group-flush">
+        <a routerLink="/android-project" class="list-group-item list-group-item-action bg-light ">Android</a>
+        <a routerLink="/ios-project" class="list-group-item list-group-item-action bg-light ">iOS</a>
+    </div>
+</div>

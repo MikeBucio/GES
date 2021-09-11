@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+.pad{
+ 
+    padding: 64px;
+
+}
+@media (max-width: 1380px) {
+
+    .pad{
+ 
+        padding: 32px;
+    
+    }
+ 
+}
+@media (max-width: 990px) {
+
+    .pad{
+ 
+        padding: 16px;
+    
+    }
+ 
+}
+@media (max-width: 990px) {
+
+    .pad{
+ 
+        padding: 16px;
+    
+    }
+ 
+}
+@media (max-width: 490px) {
+
+    .pad{
+ 
+        padding: 8px;
+    
+    }
+ 
+}
+.x{
+    background-color: rgb(87, 243, 87);
+}
+
+
+

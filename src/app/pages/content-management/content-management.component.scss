@@ -1,0 +1,23 @@
+.bg-image-full {
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.backg {
+    background: #007bff;
+    background-image: url(../../../assets/img/sftFactory1.png);
+    background-size: cover;
+    width: 100%;
+    height: 120%;
+}
+
+p {
+    text-align: justify;
+}
+
+ol {
+    list-style-type: disc;
+}
